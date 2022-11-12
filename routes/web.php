@@ -20,3 +20,20 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('about');
 });
+
+Route::get('/contact', function () {
+    return view('contact');
+});
+
+Route::get('/job-details', function () {
+    return view('job-details');
+});
+
+
+Route::get('/add-job', function () {
+    return view('add-job');
+});
+
+Route::get('/login', function () {
+    return view('login');
+});
