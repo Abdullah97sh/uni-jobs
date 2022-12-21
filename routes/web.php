@@ -29,6 +29,10 @@ Route::get('/job-details', function () {
     return view('job-details');
 });
 
+Route::get('/profile', function () {
+    return view('profile');
+});
+
 
 Route::get('/add-job', function () {
     return view('add-job');
@@ -36,4 +40,8 @@ Route::get('/add-job', function () {
 
 Route::get('/login', function () {
     return view('login');
+});
+
+Route::get('/admin-index', function () {
+    return view('admin.index');
 });
