@@ -8,20 +8,20 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="author" content="Free-Template.co" />
-    <link rel="shortcut icon" href="ftco-32x32.png">
+    <link rel="shortcut icon" href="../ftco-32x32.png">
 
-    <link rel="stylesheet" href="css/custom-bs.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="css/bootstrap-select.min.css">
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
-    <link rel="stylesheet" href="fonts/line-icons/style.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="../css/custom-bs.css">
+    <link rel="stylesheet" href="../css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="../fonts/icomoon/style.css">
+    <link rel="stylesheet" href="../fonts/line-icons/style.css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
     {{--  --}}
-    <link rel="stylesheet" href="css/quill.snow.css">
+    <link rel="stylesheet" href="../css/quill.snow.css">
 
     <!-- MAIN CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body id="top">
@@ -78,9 +78,19 @@
                             </li>
                             <li><a href="blog.html">Blog</a></li>
                             <li><a href="./contact">Contact</a></li>
+                            @auth
+                                <li class="has-children">
+                                    <a href="#">Profile</a>
+                                    <ul class="dropdown">
+                                        <li><a href="/profile">Account</a></li>
+                                        <li><a href="/logout">Logout</a></li>
+                                    </ul>
+                                </li>
+                            @endauth
+
                             <li class="d-lg-none"><a href="add-job"><span class="mr-2">+</span> Post a Job</a>
                             </li>
-                            <li class="d-lg-none"><a href="login.html">Log In</a></li>
+                            <li class="d-lg-none"><a href="login">Log In</a></li>
                         </ul>
                     </nav>
 
@@ -89,8 +99,11 @@
                             <a href="add-job"
                                 class="btn btn-outline-white border-width-2 d-none d-lg-inline-block"><span
                                     class="mr-2 icon-add"></span>Post a Job</a>
-                            <a href="login.html" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span
-                                    class="mr-2 icon-lock_outline"></span>Log In</a>
+                            @guest
+                                <a href="login" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span
+                                        class="mr-2 icon-lock_outline"></span>Log In</a>
+                            @endguest
+                            
                         </div>
                         <a href="#"
                             class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3"><span
@@ -107,6 +120,7 @@
         @yield('contact')
         @yield('add-job')
         @yield('job-details')
+        @yield('all-jobs')
 
 
 
@@ -178,22 +192,22 @@
     </div>
 
     <!-- SCRIPTS -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/stickyfill.min.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/isotope.pkgd.min.js"></script>
+    <script src="../js/stickyfill.min.js"></script>
+    <script src="../js/jquery.fancybox.min.js"></script>
+    <script src="../js/jquery.easing.1.3.js"></script>
 
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.animateNumber.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
+    <script src="../js/jquery.waypoints.min.js"></script>
+    <script src="../js/jquery.animateNumber.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
     {{--  --}}
-    <script src="js/quill.min.js"></script>
+    <script src="../js/quill.min.js"></script>
 
-    <script src="js/bootstrap-select.min.js"></script>
+    <script src="../js/bootstrap-select.min.js"></script>
 
-    <script src="js/custom.js"></script>
+    <script src="../js/custom.js"></script>
 
 </body>
 

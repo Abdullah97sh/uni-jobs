@@ -1,7 +1,6 @@
 @extends('master')
 
-@section('index')  
-
+@section('index')
     <!-- HOME -->
     <section class="home-section section-hero overlay bg-image" style="background-image: url('images/hero_1.jpg');"
         id="home-section">
@@ -125,8 +124,7 @@
                 <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
                     <a href="job-single.html"></a>
                     <div class="job-listing-logo">
-                        <img src="images/job_logo_1.jpg" alt="Free Website Template by Free-Template.co"
-                            class="img-fluid">
+                        <img src="images/job_logo_1.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid">
                     </div>
 
                     <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
@@ -146,8 +144,7 @@
                 <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
                     <a href="job-single.html"></a>
                     <div class="job-listing-logo">
-                        <img src="images/job_logo_2.jpg" alt="Free Website Template by Free-Template.co"
-                            class="img-fluid">
+                        <img src="images/job_logo_2.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid">
                     </div>
 
                     <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
@@ -296,17 +293,34 @@
 
     <section class="py-5 bg-image overlay-primary fixed overlay" style="background-image: url('images/hero_1.jpg');">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-8">
-                    <h2 class="text-white">Looking For A Job?</h2>
-                    <p class="mb-0 text-white lead">Lorem ipsum dolor sit amet consectetur adipisicing elit tempora
-                        adipisci impedit.</p>
+            @guest
+
+
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <h2 class="text-white">Looking For A Job?</h2>
+                        <p class="mb-0 text-white lead">Lorem ipsum dolor sit amet consectetur adipisicing elit tempora
+                            adipisci impedit.</p>
+                    </div>
+                    <div class="col-md-3 ml-auto">
+                        <a href="/signup" class="btn btn-warning btn-block btn-lg">Sign Up</a>
+                    </div>
                 </div>
-                <div class="col-md-3 ml-auto">
-                    <a href="#" class="btn btn-warning btn-block btn-lg">Sign Up</a>
-                </div>
+            @endguest
+
+            @auth
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <h2 class="text-white">Looking For More Jobs?</h2>
+                        <p class="mb-0 text-white lead">Lorem ipsum dolor sit amet consectetur adipisicing elit tempora
+                            adipisci impedit.</p>
+                    </div>
+                    <div class="col-md-3 ml-auto">
+                        <a href="/signup" class="btn btn-warning btn-block btn-lg">Descover All Jobs</a>
+                    </div>
+                @endauth
+
             </div>
-        </div>
     </section>
 
 
@@ -415,6 +429,4 @@
             </div>
         </div>
     </section>
-
-
 @endsection

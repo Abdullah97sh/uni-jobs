@@ -17,22 +17,29 @@
 <body>
     <!-- main -->
     <div class="main-w3layouts wrapper">
-        <h1>Creative Login Form</h1>
+        <h1>Creative SignUp Form</h1>
         <div class="main-agileinfo">
             <div class="agileits-top">
-                <form action="/login" method="post">
-                    @csrf
-                    @if (session('error'))
-                        <p class="text-error">{{ session('error') }}</p>
-                    @endif
-
+                <form action="/register" method="POST">
+					@csrf
+                    @error('name')
+                        <p class="text-error">{{ $message }}</p>
+                    @enderror
+                    <input class="text" type="text" name="name" placeholder="name" required="">
+                    @error('email')
+                        <p class="text-error">{{ $message }}</p>
+                    @enderror
                     <input class="text email" type="email" name="email" placeholder="Email" required="">
+                    @error('password')
+                        <p class="text-error">{{ $message }}</p>
+                    @enderror
                     <input class="text" type="password" name="password" placeholder="Password" required="">
+                    <input class="text w3lpass" type="password" name="password_confirmation"
+                        placeholder="Confirm Password" required="">
 
-
-                    <input type="submit" value="Login">
+                    <input type="submit" value="SIGNUP">
                 </form>
-                <p>Don't have an Account? <a href="signup"> Sign up Now!</a></p>
+                <p>Have an Account? <a href="login"> Login Now!</a></p>
             </div>
         </div>
         <!-- copyright -->
