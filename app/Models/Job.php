@@ -20,4 +20,13 @@ class Job extends Model
         'job_hours',
         'user_id',
     ];
+
+    public function savedJobs(){
+        return $this->hasMany(Saved::class);
+    }
+
+    public function appliedJobs(){
+        return $this->hasMany(Applied::class);
+    }
+
 }

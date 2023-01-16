@@ -7,7 +7,16 @@ use Illuminate\Database\Eloquent\Model;
 
 class Saved extends Model
 {
+    use HasFactory;
+
     protected $fillable = ['user_id' , 'job_id'];
 
-    use HasFactory;
+    public function users(){
+        return $this->belongsTo(User::class);
+    }
+
+    public function job(){
+        return $this->belongsTo(Job::class);
+    }
+
 }

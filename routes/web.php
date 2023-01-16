@@ -33,9 +33,7 @@ Route::get('/job-details', function () {
     return view('job-details');
 });
 
-Route::get('/profile', function () {
-    return view('profile');
-});
+
 
 
 Route::get('/add-job', function () {
@@ -49,6 +47,11 @@ Route::get('/jobs/{id}', [JobController::class, 'show']);
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/save-job/{id}', [SavedController::class, 'store']);
+    Route::get('/profile', function () {
+        // $user = auth()->user();
+        // dd($user->educations);
+        return view('profile');
+    });
 });
 
 

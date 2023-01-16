@@ -149,11 +149,11 @@
                         <div class="w-50">
                             <h3 class="text-primary  mt-3 h5 pl-3 mb-3 ">Personal</h3>
                             <ul class="list-unstyled pl-3 mb-0">
-                                <li class="mb-2"><strong class="text-black">Name: </strong> Khaled Alkarmi</li>
-                                <li class="mb-2"><strong class="text-black">Mobile Number: </strong> 0777853947</li>
-                                <li class="mb-2"><strong class="text-black">Date of birth: </strong> 10/07/1994</li>
-                                <li class="mb-2"><strong class="text-black">Gender: </strong> Male</li>
-                                <li class="mb-2"><strong class="text-black">Country: </strong> Amman</li>
+                                <li class="mb-2"><strong class="text-black">Name: </strong> {{auth()->user()->name}}</li>
+                                <li class="mb-2"><strong class="text-black">Mobile Number: </strong> {{auth()->user()->phone}}</li>
+                                <li class="mb-2"><strong class="text-black">Age: </strong> {{auth()->user()->age}}</li>
+                                <li class="mb-2"><strong class="text-black">Gender: </strong> {{auth()->user()->gender}}</li>
+                                <li class="mb-2"><strong class="text-black">City: </strong> {{auth()->user()->city}}</li>
                             </ul>
                         </div>
                         <div class="d-flex justify-content-center rounded h-75 w-50">
@@ -175,10 +175,22 @@
                     <div class="bg-light p-3 border rounded mb-4">
                         <h3 class="text-primary  mt-3 h5 pl-3 mb-3 ">Professional</h3>
                         <ul class="list-unstyled pl-3 mb-0">
-                            <li class="mb-2"><strong class="text-black">Experience: </strong> 3 Years</li>
-                            <li class="mb-2"><strong class="text-black">Recent Job Title: </strong> Developer</li>
-                            <li class="mb-2"><strong class="text-black">Skills: </strong> HTML, CSS ...</li>
-                            <li class="mb-2"><strong class="text-black">Languages: </strong> Arabic, English</li>
+                            @if (count(auth()->user()->experiences)>0)
+                                <li class="mb-2"><strong class="text-black">Experience: </strong> {{auth()->user()->experiences[0]->experience}}</li>
+                                <li class="mb-2"><strong class="text-black">Recent Job Title: </strong> {{auth()->user()->experiences[0]->recent_job}}</li>
+                            @else
+                                <li class="mb-2"><strong class="text-black">You Dont Add Experience</strong></li>
+                            @endif
+                                <li class="mb-2"><strong class="text-black">Skills: </strong> 
+                                    @if (count(auth()->user()->skills)>0)
+                                        @foreach (auth()->user()->skills as $skill)
+                                            {{$skill->skill}} ,
+                                        @endforeach
+                                    @else
+                                        You Dont Add any skill
+                                    @endif
+                                </li>
+                            
                         </ul>
                     </div>
                 </div>
@@ -186,13 +198,18 @@
                 {{-- Educational --}}
                 <div class="col-lg-6">
                     <div class="bg-light p-3 border rounded mb-4">
-                        <h3 class="text-primary  mt-3 h5 pl-3 mb-3 ">Educational</h3>
+                        <h3 class="text-primary mt-3 h5 pl-3 mb-3 ">Educational</h3>
                         <ul class="list-unstyled pl-3 mb-0">
-                            <li class="mb-2"><strong class="text-black">Level of Education: </strong>Bachelor</li>
-                            <li class="mb-2"><strong class="text-black">Univercity/School Name: </strong> Univercity of
-                                Jordan</li>
-                            <li class="mb-2"><strong class="text-black">Major: </strong>Managemant Information System</li>
-                            <li class="mb-2"><strong class="text-black">GPA: </strong>Very Good</li>
+                            @if (count(auth()->user()->educations)>0)
+                                <li class="mb-2"><strong class="text-black">Level of Education: </strong>{{auth()->user()->educations[0]->degree}}</li>
+                                <li class="mb-2"><strong class="text-black">Univercity/School Name: </strong> Univercity of
+                                    Jordan</li>
+                                <li class="mb-2"><strong class="text-black">Major: </strong>Managemant Information System</li>
+                                <li class="mb-2"><strong class="text-black">GPA: </strong>Very Good</li>
+                            @else
+                                <li class="mb-2"><strong class="text-black">You Dont Add Education</strong></li>
+                            @endif
+                            
 
                         </ul>
                     </div>
@@ -206,10 +223,14 @@
                     <div class="bg-light p-3 border rounded mb-4">
                         <h3 class="text-primary  mt-3 h5 pl-3 mb-3 ">Job Opportunities Saved</h3>
                         <ul class="list-unstyled pl-3 mb-0">
-                            <li class="mb-2"><strong class="text-black">Link</strong> .</li>
-                            <li class="mb-2"><strong class="text-black">Link</strong> .</li>
-                            <li class="mb-2"><strong class="text-black">Link</strong> .</li>
-                            <li class="mb-2"><strong class="text-black">Link</strong> .</li>
+                            @if (count(auth()->user()->savedJobs)>0)
+                                @foreach (auth()->user()->savedJobs as $savedJob)
+                                    <a href="/jobs/{{$savedJob->job->id}}"><li class="mb-2">{{$savedJob->job->job_title}}</li></a>
+                                @endforeach
+                            @else
+                                <li class="mb-2"><strong class="text-black">You Dont Save any job</strong> </li>
+                            @endif
+                            
                         </ul>
                     </div>
                 </div>
@@ -219,10 +240,13 @@
                     <div class="bg-light p-3 border rounded mb-4">
                         <h3 class="text-primary  mt-3 h5 pl-3 mb-3 ">Jobs applied before</h3>
                         <ul class="list-unstyled pl-3 mb-0">
-                            <li class="mb-2"><strong class="text-black">Link</strong> .</li>
-                            <li class="mb-2"><strong class="text-black">Link</strong> .</li>
-                            <li class="mb-2"><strong class="text-black">Link</strong> .</li>
-                            <li class="mb-2"><strong class="text-black">Link</strong> .</li>
+                            @if (count(auth()->user()->appliedJobs)>0)
+                                @foreach (auth()->user()->appliedJobs as $applyJob)
+                                    <a href="/jobs/{{$applyJob->job->id}}"><li class="mb-2">{{$applyJob->job->job_title}}</li></a>
+                                @endforeach
+                            @else
+                                <li class="mb-2"><strong class="text-black">You Dont Apply any job</strong> </li>
+                            @endif
                         </ul>
                     </div>
                 </div>
