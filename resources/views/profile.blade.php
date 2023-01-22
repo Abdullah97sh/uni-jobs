@@ -1,7 +1,7 @@
 @extends('master')
 
-@section('job-details')
-    <!-- job-details -->
+@section('profile')
+    <!-- profile -->
     <section class="section-hero overlay inner-page bg-image" style="background-image: url('images/hero_1.jpg');"
         id="home-section">
         <div class="container">

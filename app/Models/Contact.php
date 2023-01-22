@@ -8,4 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Contact extends Model
 {
     use HasFactory;
+
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+    */
+    public $fillable = [
+        'first_name', 'last_name', 'email','subject', 'massage'
+    ];
 }

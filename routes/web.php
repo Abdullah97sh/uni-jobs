@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\JobController;
 use App\Http\Controllers\SavedController;
 use Illuminate\Routing\RouteGroup;
@@ -29,6 +30,10 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
+Route::get('/contact', [ContactController::class, 'contactForm'])->name('contact-form');
+Route::post('/contact-form', [ContactController::class, 'storeContactForm'])->name('contact-form.store');
+
+
 Route::get('/job-details', function () {
     return view('job-details');
 });
@@ -52,6 +57,12 @@ Route::middleware(['auth'])->group(function () {
         // dd($user->educations);
         return view('profile');
     });
+    Route::get('/editprofile', function () {
+        // $user = auth()->user();
+        // dd($user->educations);
+        return view('editprofile');
+    });
+
 });
 
 
@@ -73,6 +84,11 @@ Route::get('/logout', [AuthController::class, 'logout']);
 Route::post('/add-job', [JobController::class, 'store']);
 
 
+
+// Admins Routes
+
 Route::get('/admin-index', function () {
     return view('admin.index');
 });
+
+

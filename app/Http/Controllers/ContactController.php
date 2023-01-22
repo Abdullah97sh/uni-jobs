@@ -82,4 +82,27 @@ class ContactController extends Controller
     {
         //
     }
+
+
+    public function contactForm()
+    {
+        return view('contact');
+    }
+
+    public function storeContactForm(Request $request)
+    {
+        // dd($request->all());
+        $request->validate([
+            'first_name' => 'required',
+            'last_name' => 'required',
+            'email' => 'required|email',
+            'subject' => 'required',
+            'message' => 'required',
+        ]);
+
+        $input = $request->all();
+        Contact::create($input);
+
+        return redirect()->back()->with(['success' => 'Contact Form Submit Successfully']);
+    }
 }
