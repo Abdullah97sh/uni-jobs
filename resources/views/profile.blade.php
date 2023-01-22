@@ -255,7 +255,7 @@
 
             <div class="row">
                 {{-- Recommended Jobs --}}
-                <div class="col-lg-6">
+                {{-- <div class="col-lg-6">
                     <div class="bg-light p-3 border rounded mb-4">
                         <h3 class="text-primary  mt-3 h5 pl-3 mb-3 ">Recommended Jobs</h3>
                         <ul class="list-unstyled pl-3 mb-0">
@@ -265,7 +265,7 @@
                             <li class="mb-2"><strong class="text-black">Link</strong> .</li>
                         </ul>
                     </div>
-                </div>
+                </div> --}}
             </div>
 
 

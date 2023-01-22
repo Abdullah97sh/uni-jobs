@@ -15,8 +15,14 @@ class JobController extends Controller
      */
     public function index()
     {
+        $search = request()->query('search');
+        $city = request()->query('city');
+        $hours = request()->query('hours');
+        $jobs = Job::where('job_title' , 'LIKE' , '%'. $search. '%')->
+        where('company_city' , 'LIKE' , '%'. $city. '%')->
+        where('job_hours' , 'LIKE' , '%'. $hours. '%')->get();
+        dd($jobs);
         $jobs = Job::orderBy('id', 'desc')->paginate(10);
-
         return view('all-jobs', ['jobs' => $jobs]);
     }
 
