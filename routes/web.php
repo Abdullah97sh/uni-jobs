@@ -91,4 +91,7 @@ Route::get('/admin-index', function () {
     return view('admin.index');
 });
 
+Route::get('admin/dashboard', [UserController::class, 'getUsers'])->middleware(['auth', 'can:isAdmin']);
+
+
 

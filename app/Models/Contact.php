@@ -16,6 +16,6 @@ class Contact extends Model
      * @var array
     */
     public $fillable = [
-        'first_name', 'last_name', 'email','subject', 'massage'
+        'first_name', 'last_name', 'email','subject', 'message'
     ];
 }
