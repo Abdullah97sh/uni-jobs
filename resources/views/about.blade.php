@@ -22,9 +22,8 @@
         <div class="container">
             <div class="row mb-5 justify-content-center">
                 <div class="col-md-7 text-center">
-                    <h2 class="section-title mb-2 text-white">JobBoard Site Stats</h2>
-                    <p class="lead text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita unde
-                        officiis recusandae sequi excepturi corrupti.</p>
+                    <h2 class="section-title mb-2 text-white">Discover Your Next Opportunity with UNIJOBS</h2>
+                    <p class="lead text-white">Connecting University Students with Part-Time Jobs.</p>
                 </div>
             </div>
             <div class="row pb-0 block__19738 section-counter">
@@ -73,12 +72,13 @@
                     </a>
                 </div>
                 <div class="col-lg-5 ml-auto">
-                    <h2 class="section-title mb-3">JobBoard For Freelancers, Web Developers</h2>
-                    <p class="lead">Eveniet voluptatibus voluptates suscipit minima, cum voluptatum ut dolor, sed facere
-                        corporis qui, ea quisquam quis odit minus nulla vitae. Sit, voluptatem.</p>
-                    <p>Ipsum harum assumenda in eum vel eveniet numquam, cumque vero vitae enim cupiditate deserunt eligendi
-                        officia modi consectetur. Expedita tempora quos nobis earum hic ex asperiores quisquam optio nostrum
-                        sit!</p>
+                    <h2 class="section-title mb-3">Our Mission</h2>
+                    <p class="lead">Our mission is to provide a platform where university students can easily find
+                        part-time jobs that fit their schedules and interests. We understand the challenges faced by
+                        students in balancing their education and financial needs, and our goal is to make it easier for
+                        them to find meaningful and flexible employment opportunities.</p>
+                    <p>We believe that every student should have the chance to gain work experience, earn extra income, and
+                        pursue their passions, and we are committed to helping them do just that.</p>
                 </div>
             </div>
         </div>
@@ -94,19 +94,20 @@
                     </a>
                 </div>
                 <div class="col-lg-5 mr-auto order-md-1  mb-5 mb-lg-0">
-                    <h2 class="section-title mb-3">JobBoard For Workers</h2>
-                    <p class="lead">Eveniet voluptatibus voluptates suscipit minima, cum voluptatum ut dolor, sed facere
-                        corporis qui, ea quisquam quis odit minus nulla vitae. Sit, voluptatem.</p>
-                    <p>Ipsum harum assumenda in eum vel eveniet numquam, cumque vero vitae enim cupiditate deserunt eligendi
-                        officia modi consectetur. Expedita tempora quos nobis earum hic ex asperiores quisquam optio nostrum
-                        sit!</p>
+                    <h2 class="section-title mb-3">Our Team</h2>
+                    <p class="lead">Our team is made up of experienced professionals who understand the needs of both
+                        students and employers. We have a passion for technology and innovation, and we use our skills to
+                        create a seamless and user-friendly platform for job seekers and employers alike.</p>
+                    <p>From our developers to our customer support team, everyone at UNIJOBS is dedicated to
+                        providing the best possible experience for our users. Whether you're a student looking for your next
+                        gig or an employer looking for top talent, you can trust us to be your partner in success.</p>
                 </div>
             </div>
         </div>
     </section>
 
 
-    <section class="site-section">
+    {{-- <section class="site-section">
         <div class="container">
             <div class="row mb-5">
                 <div class="col-12 text-center" data-aos="fade">
@@ -154,5 +155,5 @@
                     </div>
                 </div>
             </div>
-    </section>
+    </section> --}}
 @endsection

@@ -55,8 +55,9 @@
                     <nav class="mx-auto site-navigation">
                         <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
                             <li><a href="./" class="nav-link active">Home</a></li>
+                            <li><a href="./jobs">Jobs</a></li>
                             <li><a href="./about">About</a></li>
-                            <li class="has-children">
+                            {{-- <li class="has-children">
                                 <a href="#">Job Listings</a>
                                 <ul class="dropdown">
                                     <li><a href="job-details">Job Details</a></li>
@@ -76,7 +77,7 @@
                                     <li><a href="gallery.html">Gallery</a></li>
                                 </ul>
                             </li>
-                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="blog.html">Blog</a></li> --}}
                             <li><a href="./contact">Contact</a></li>
                             @auth
                                 <li class="has-children">

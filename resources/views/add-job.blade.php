@@ -79,7 +79,7 @@
                         <div class="form-group">
                             <label for="job-region">Job Hours/Week</label>
                             <select name="job_hours" class="selectpicker border rounded" id="job-region"
-                                data-style="btn-black" data-width="100%" data-live-search="true" title="Select Region"
+                                data-style="btn-black" data-width="100%" data-live-search="true" title="Select Hours"
                                 required>
                                 <option value="12">12</option>
                                 <option value="18">18</option>

@@ -45,7 +45,7 @@
                                 <input type="text" id="last_name" class="form-control" name="last_name"
                                     placeholder="Last Name">
                             </div>
-                        </div>  
+                        </div>
 
                         <div class="row form-group">
                             <div class="col-md-12">
@@ -82,13 +82,13 @@
                 <div class="col-lg-5 ml-auto">
                     <div class="p-4 mb-3 bg-white">
                         <p class="mb-0 font-weight-bold">Address</p>
-                        <p class="mb-4">203 Fake St. Mountain View, San Francisco, California, USA</p>
+                        <p class="mb-4">Al Hijaz Towers, Mecca St., Amman, Jordan </p>
 
                         <p class="mb-0 font-weight-bold">Phone</p>
-                        <p class="mb-4"><a href="#">+1 232 3235 324</a></p>
+                        <p class="mb-4"><a href="#">+962 7 7844 7305</a></p>
 
                         <p class="mb-0 font-weight-bold">Email Address</p>
-                        <p class="mb-0"><a href="#">youremail@domain.com</a></p>
+                        <p class="mb-0"><a href="#">unijobs@gmail.com</a></p>
 
                     </div>
                 </div>
@@ -107,15 +107,15 @@
                 <div class="col-lg-6">
                     <div class="block__87154 bg-white rounded">
                         <blockquote>
-                            <p>&ldquo;Ipsum harum assumenda in eum vel eveniet numquam cumque vero vitae enim cupiditate
-                                deserunt eligendi officia modi consectetur. Expedita tempora quos nobis earum hic ex
-                                asperiores quisquam optio nostrum sit&rdquo;</p>
+                            <p>&ldquo;I had been looking for a part-time job for months, but nothing seemed to fit my needs.
+                                Thanks to UNIJOBS, I was finally able to find a job that not only pays well but also
+                                allows me to pursue my passions.&rdquo;</p>
                         </blockquote>
                         <div class="block__91147 d-flex align-items-center">
                             <figure class="mr-4"><img src="images/person_1.jpg" alt="Image" class="img-fluid"></figure>
                             <div>
-                                <h3>Elisabeth Smith</h3>
-                                <span class="position">Creative Director</span>
+                                <h3>Sara Ahmad</h3>
+                                <span class="position">Languages Student</span>
                             </div>
                         </div>
                     </div>
@@ -124,16 +124,16 @@
                 <div class="col-lg-6">
                     <div class="block__87154 bg-white rounded">
                         <blockquote>
-                            <p>&ldquo;Ipsum harum assumenda in eum vel eveniet numquam, cumque vero vitae enim cupiditate
-                                deserunt eligendi officia modi consectetur. Expedita tempora quos nobis earum hic ex
-                                asperiores quisquam optio nostrum sit&rdquo;</p>
+                            <p>&ldquo;I was able to find a part-time job that fits perfectly with my class schedule, and I
+                                couldn't be happier! The application process was simple and straightforward, and I was able
+                                to get hired quickly.&rdquo;</p>
                         </blockquote>
                         <div class="block__91147 d-flex align-items-center">
                             <figure class="mr-4"><img src="images/person_2.jpg" alt="Image" class="img-fluid">
                             </figure>
                             <div>
-                                <h3>Chris Peter</h3>
-                                <span class="position">Web Designer</span>
+                                <h3>Khaled Anas</h3>
+                                <span class="position">Business student</span>
                             </div>
                         </div>
                     </div>

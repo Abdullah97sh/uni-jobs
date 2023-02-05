@@ -9,9 +9,9 @@
             <div class="row align-items-center justify-content-center">
                 <div class="col-md-12">
                     <div class="mb-5 text-center">
-                        <h1 class="text-white font-weight-bold">The Easiest Way To Get Your Dream Job</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate est, consequuntur
-                            perferendis.</p>
+                        <h1 class="text-white font-weight-bold">The Ultimate Platform for Part-Time Jobs for University Students</h1>
+                        <p>Empower your future with the right part-time job for you, handpicked and accessible through our
+                            user-friendly platform.</p>
                     </div>
                     <form method="post" class="search-jobs-form">
                         <div class="row mb-5">
@@ -23,21 +23,24 @@
                                 <select class="selectpicker" data-style="btn-white btn-lg" data-width="100%"
                                     data-live-search="true" title="Select Region">
                                     <option>Anywhere</option>
-                                    <option>San Francisco</option>
-                                    <option>Palo Alto</option>
-                                    <option>New York</option>
-                                    <option>Manhattan</option>
-                                    <option>Ontario</option>
-                                    <option>Toronto</option>
-                                    <option>Kansas</option>
-                                    <option>Mountain View</option>
+                                    <option>Amman</option>
+                                    <option>Zarka</option>
+                                    <option>Irbid</option>
+                                    <option>Jarash</option>
+                                    <option>Ajlon</option>
+                                    <option>Madaba</option>
+                                    <option>Salt</option>                                    
                                 </select>
                             </div>
                             <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
                                 <select class="selectpicker" data-style="btn-white btn-lg" data-width="100%"
-                                    data-live-search="true" title="Select Job Type">
-                                    <option>Part Time</option>
-                                    <option>Full Time</option>
+                                    data-live-search="true" title="Job Hours/Week">
+                                    <option>12</option>
+                                    <option>18</option>
+                                    <option>24</option>
+                                    <option>30</option>
+                                    <option>36</option>
+                                    <option>Other</option>
                                 </select>
                             </div>
                             <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
@@ -49,9 +52,9 @@
                             <div class="col-md-12 popular-keywords">
                                 <h3>Trending Keywords:</h3>
                                 <ul class="keywords list-unstyled m-0 p-0">
-                                    <li><a href="#" class="">UI Designer</a></li>
-                                    <li><a href="#" class="">Python</a></li>
-                                    <li><a href="#" class="">Developer</a></li>
+                                    <li><a href="#" class="">Library</a></li>
+                                    <li><a href="#" class="">Restaurant</a></li>
+                                    <li><a href="#" class="">Presta</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -71,9 +74,8 @@
         <div class="container">
             <div class="row mb-5 justify-content-center">
                 <div class="col-md-7 text-center">
-                    <h2 class="section-title mb-2 text-white">JobBoard Site Stats</h2>
-                    <p class="lead text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-                        unde officiis recusandae sequi excepturi corrupti.</p>
+                    <h2 class="section-title mb-2 text-white">UNIJOBS Site Stats</h2>
+                    <p class="lead text-white">Helping Students Find Their Path to Success</p>
                 </div>
             </div>
             <div class="row pb-0 block__19738 section-counter">
@@ -111,7 +113,7 @@
         </div>
     </section>
 
-    <section class="site-section">
+    {{-- <section class="site-section">
         <div class="container">
 
             <div class="row mb-5 justify-content-center">
@@ -289,7 +291,7 @@
             </div>
 
         </div>
-    </section>
+    </section> --}}
 
     <section class="py-5 bg-image overlay-primary fixed overlay" style="background-image: url('images/hero_1.jpg');">
         <div class="container">
@@ -312,8 +314,8 @@
                 <div class="row align-items-center">
                     <div class="col-md-8">
                         <h2 class="text-white">Looking For More Jobs?</h2>
-                        <p class="mb-0 text-white lead">Lorem ipsum dolor sit amet consectetur adipisicing elit tempora
-                            adipisci impedit.</p>
+                        <p class="mb-0 text-white lead">Find even more opportunities to jump-start your career with our
+                            extensive collection of part-time jobs.</p>
                     </div>
                     <div class="col-md-3 ml-auto">
                         <a href="/signup" class="btn btn-warning btn-block btn-lg">Descover All Jobs</a>
@@ -331,9 +333,10 @@
                 <div class="col-12 text-center mt-4 mb-5">
                     <div class="row justify-content-center">
                         <div class="col-md-7">
-                            <h2 class="section-title mb-2">Company We've Helped</h2>
-                            <p class="lead">Porro error reiciendis commodi beatae omnis similique voluptate rerum
-                                ipsam fugit mollitia ipsum facilis expedita tempora suscipit iste</p>
+                            <h2 class="section-title mb-2">Companies cooperating with us</h2>
+                            <p class="lead">Join forces with top employers and boost your chances of landing your dream
+                                part-time job. Discover a diverse range of opportunities from companies who trust us to
+                                connect them with the best university talent.</p>
                         </div>
                     </div>
 
@@ -377,10 +380,9 @@
                 <div class="row">
                     <div class="col-lg-6 align-self-center text-center text-lg-left">
                         <blockquote>
-                            <p>&ldquo;Soluta quasi cum delectus eum facilis recusandae nesciunt molestias
-                                accusantium libero dolores repellat id in dolorem laborum ad modi qui at quas
-                                dolorum voluptatem voluptatum repudiandae.&rdquo;</p>
-                            <p><cite> &mdash; Corey Woods, @Dribbble</cite></p>
+                            <p>&ldquo;I never thought finding a part-time job could be so easy! UNIJOBS made the
+                                process simple and stress-free, and I was able to start my new job in no time.&rdquo;</p>
+                            <p><cite> &mdash; Eyad Fakhri, @Dribbble</cite></p>
                         </blockquote>
                     </div>
                     <div class="col-lg-6 align-self-end text-center text-lg-right">
@@ -393,10 +395,11 @@
                 <div class="row">
                     <div class="col-lg-6 align-self-center text-center text-lg-left">
                         <blockquote>
-                            <p>&ldquo;Soluta quasi cum delectus eum facilis recusandae nesciunt molestias
-                                accusantium libero dolores repellat id in dolorem laborum ad modi qui at quas
-                                dolorum voluptatem voluptatum repudiandae.&rdquo;</p>
-                            <p><cite> &mdash; Chris Peters, @Google</cite></p>
+                            <p>&ldquo;At UNIJOBS, we not only match university students with suitable part-time jobs but
+                                also foster strong relationships between employers and candidates. Our platform provides a
+                                secure and efficient way to connect and leads to successful job experiences for all.&rdquo;
+                            </p>
+                            <p><cite> &mdash; Omar Assad, @Google</cite></p>
                         </blockquote>
                     </div>
                     <div class="col-lg-6 align-self-end text-center text-lg-right">
@@ -414,8 +417,8 @@
             <div class="row">
                 <div class="col-md-6 align-self-center text-center text-md-left mb-5 mb-md-0">
                     <h2 class="text-white">Get The Mobile Apps</h2>
-                    <p class="mb-5 lead text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit tempora
-                        adipisci impedit.</p>
+                    <p class="mb-5 lead text-white">Get on-the-go access to your favorite part-time jobs with our
+                        convenient mobile app!</p>
                     <p class="mb-0">
                         <a href="#" class="btn btn-dark btn-md px-4 border-width-2"><span
                                 class="icon-apple mr-3"></span>App Store</a>
