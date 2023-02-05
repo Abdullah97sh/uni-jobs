@@ -137,31 +137,25 @@
             <div class="container">
                 <div class="row mb-5">
                     <div class="col-6 col-md-3 mb-4 mb-md-0">
-                        <h3>Search Trending</h3>
+                        <h3>All Jobs</h3>
                         <ul class="list-unstyled">
-                            <li><a href="#">Web Design</a></li>
-                            <li><a href="#">Graphic Design</a></li>
-                            <li><a href="#">Web Developers</a></li>
-                            <li><a href="#">Python</a></li>
-                            <li><a href="#">HTML5</a></li>
-                            <li><a href="#">CSS3</a></li>
+                            <li><a href="./jobs">Jobs</a></li>
+                            <li><a href="add-job">Post A Job</a></li>
+                            
                         </ul>
                     </div>
                     <div class="col-6 col-md-3 mb-4 mb-md-0">
                         <h3>Company</h3>
                         <ul class="list-unstyled">
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Career</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Resources</a></li>
+                            <li><a href="./about">About Us</a></li>
+                            
                         </ul>
                     </div>
                     <div class="col-6 col-md-3 mb-4 mb-md-0">
                         <h3>Support</h3>
                         <ul class="list-unstyled">
-                            <li><a href="#">Support</a></li>
-                            <li><a href="#">Privacy</a></li>
-                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="./contact">Contact</a></li>
+                          
                         </ul>
                     </div>
                     <div class="col-6 col-md-3 mb-4 mb-md-0">
@@ -182,9 +176,9 @@
                                 Copyright &copy;
                                 <script>
                                     document.write(new Date().getFullYear());
-                                </script> All rights reserved | This template is made with <i
+                                </script> All rights reserved | Made with <i
                                     class="icon-heart text-danger" aria-hidden="true"></i> by <a
-                                    href="https://colorlib.com" target="_blank">Colorlib</a>
+                                    href="./" target="_blank">UNIJOBS</a>
                                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                             </small></p>
                     </div>

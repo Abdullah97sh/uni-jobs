@@ -163,10 +163,9 @@
                 <div class="row">
                     <div class="col-lg-6 align-self-center text-center text-lg-left">
                         <blockquote>
-                            <p>&ldquo;Soluta quasi cum delectus eum facilis recusandae nesciunt molestias accusantium libero
-                                dolores repellat id in dolorem laborum ad modi qui at quas dolorum voluptatem voluptatum
-                                repudiandae.&rdquo;</p>
-                            <p><cite> &mdash; Corey Woods, @Dribbble</cite></p>
+                            <p>&ldquo;I never thought finding a part-time job could be so easy! UNIJOBS made the
+                                process simple and stress-free, and I was able to start my new job in no time.&rdquo;</p>
+                            <p><cite> &mdash; Eyad Fakhri</cite></p>
                         </blockquote>
                     </div>
                     <div class="col-lg-6 align-self-end text-center text-lg-right">
@@ -179,10 +178,10 @@
                 <div class="row">
                     <div class="col-lg-6 align-self-center text-center text-lg-left">
                         <blockquote>
-                            <p>&ldquo;Soluta quasi cum delectus eum facilis recusandae nesciunt molestias accusantium libero
-                                dolores repellat id in dolorem laborum ad modi qui at quas dolorum voluptatem voluptatum
-                                repudiandae.&rdquo;</p>
-                            <p><cite> &mdash; Chris Peters, @Google</cite></p>
+                            <p>&ldquo;At UNIJOBS, we not only match university students with suitable part-time jobs but
+                                also foster strong relationships between employers and candidates. Our platform provides a
+                                secure and efficient way to connect and leads to successful job experiences for all.&rdquo;</p>
+                            <p><cite> &mdash; Omar Assad</cite></p>
                         </blockquote>
                     </div>
                     <div class="col-lg-6 align-self-end text-center text-lg-right">
@@ -199,8 +198,8 @@
             <div class="row">
                 <div class="col-md-6 align-self-center text-center text-md-left mb-5 mb-md-0">
                     <h2 class="text-white">Get The Mobile Apps</h2>
-                    <p class="mb-5 lead text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit tempora
-                        adipisci impedit.</p>
+                    <p class="mb-5 lead text-white">Get on-the-go access to your favorite part-time jobs with our
+                        convenient mobile app!</p>
                     <p class="mb-0">
                         <a href="#" class="btn btn-dark btn-md px-4 border-width-2"><span
                                 class="icon-apple mr-3"></span>App Store</a>
