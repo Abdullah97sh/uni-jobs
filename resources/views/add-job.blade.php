@@ -41,7 +41,7 @@
                         <div class="form-group">
                             <label for="company-name">Company Name</label>
                             <input name="company_name" type="text" class="form-control" id="company-name"
-                                placeholder="e.g. New York" required>
+                                placeholder="company name" required>
                         </div>
 
                         <div class="form-group">

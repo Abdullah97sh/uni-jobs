@@ -17,7 +17,7 @@
 <body>
     <!-- main -->
     <div class="main-w3layouts wrapper">
-        <h1>Creative Login Form</h1>
+        <h1>UNIJOBS Login Form</h1>
         <div class="main-agileinfo">
             <div class="agileits-top">
                 <form action="/login" method="post">
@@ -37,8 +37,8 @@
         </div>
         <!-- copyright -->
         <div class="colorlibcopy-agile">
-            <p>© 2018 Colorlib Signup Form. All rights reserved | Design by <a href="https://colorlib.com/"
-                    target="_blank">Colorlib</a></p>
+            <p>© 2023 All rights reserved | Design by <a href="./"
+                    target="_blank">UNIJOBS</a></p>
         </div>
         <!-- //copyright -->
         <ul class="colorlib-bubbles">
